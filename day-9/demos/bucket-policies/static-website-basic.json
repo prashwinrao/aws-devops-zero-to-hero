@@ -2,14 +2,12 @@
     "Version": "2012-10-17",
     "Statement": [
         {
-            "Sid": "PublicReadGetObject",
+            "Sid": "PublicAccessToObjecs",
             "Effect": "Allow",
             "Principal": "*",
-            "Action": [
-                "s3:GetObject"
-            ],
+            "Action": "s3:*",
             "Resource": [
-                "arn:aws:s3:::<Bucket-Name>/*"
+                "arn:aws:s3:::<bucket-name>/*
             ]
         }
     ]
